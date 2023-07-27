@@ -1,0 +1,44 @@
+.bg-white {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.px-3 {
+  padding-left: 7.75rem;
+  padding-right: 7.75rem;
+}
+
+
+.px-4 {
+  padding-left: 8.5rem;
+  padding-right: 8.4rem;
+}
+
+
+.rounded-t-lg {
+  margin: 0 auto;
+  filter: brightness(0);
+  width: 185px;
+  pointer-events: none;
+}
+
+.one , .two , .three {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+button {
+    position: absolute;
+    top: 91%;
+    border-radius: 0px 0px 8px 8px;
+}

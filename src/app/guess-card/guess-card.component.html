@@ -1,0 +1,20 @@
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div class="mask1"><img class="rounded-t-lg" id="pokemonImg" src="{{this.guessCard.imgUrl}}" alt="" /></div>
+    <div style=" text-align: center;font-weight: 800;" *ngIf="this.pokemonGuessed" > Congratulations! Pokemon Guessed </div>
+    <div class="p-5">
+        <div class="wrapper">
+            <div class="one"><img src={{this.guessCard.typesUrl[0]}}></div>
+            <div class="two"><img src={{this.guessCard.typesUrl[1]}}></div>
+            <div class="three">{{this.guessCard.originalGeneration}}</div>
+        </div>      
+        <form method="post" (ngSubmit)="guessPokemon()">
+        <input type="text" [(ngModel)]="pokemonName" placeholder="Type here..." class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" size="10" name="pokemonName"  >
+        </form>
+        <br>
+        </div>
+
+        <button class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" size="10" (click)="changePokemon()"> Change Pokemon </button>
+
+</div>
+
