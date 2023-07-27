@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
 
+A simple pokemon guesser, consists of three clues:
+  - Blacked sprite of the pokemon.
+  - Types of the pokemon.
+  - Gen of the pokemon
+
+And with that info you will have to guess the pokemon, after that you can guess another pokemon with a button under the text prompt. Thanks for taking a look at my project.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
